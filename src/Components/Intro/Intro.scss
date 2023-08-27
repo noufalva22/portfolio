@@ -1,0 +1,142 @@
+.intro {
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+
+    .i-left {
+        display: flex;
+        position: relative;
+        flex: 1;
+        flex-direction: column;
+        gap: 2rem;
+
+
+        .i-name {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .i-name>:nth-child(1) {
+            color: var(--black);
+            font-weight: bold;
+            font-size: 3rem;
+        }
+
+        .i-name>:nth-child(2) {
+            color: var(--lightBlue);
+            font-weight: bold;
+            font-size: 3rem;
+        }
+
+        .i-name>:nth-child(3) {
+            color: var(--gray);
+            font-weight: 100;
+            font-size: 14px;
+            // margin-top: 10px;
+
+        }
+
+
+
+        .i-button {
+            width: 6rem;
+            height: 2rem;
+            font-size: 10px;
+
+        }
+
+        .i-icons {
+            margin-top: 3re;
+            display: flex;
+            gap: 20px;
+            color: #967ce0;
+
+            img {
+                width: 50px;
+            }
+
+            :hover {
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .i-right {
+        flex: 1;
+        position: relative;
+
+
+
+
+    }
+
+    .i-right>:nth-child(1) {
+        transform: scale(.70);
+        left: -15%;
+        top: -9%;
+    }
+
+    // .i-right>:nth-child(2) {
+    //     top: -4.6rem;
+    //     transform: scale(0.67);
+    //     left: -5rem;
+    // }
+
+    // .i-right>:nth-child(3) {
+    //     top: 4%;
+    //     transform: scale(1.4);
+    //     left: 31%;
+    // }
+    // .i-right>:nth-child(4) {
+    //     top: -19%;
+    //     transform: scale(0.6);
+    //     left: -24%;
+    //     border-radius: 50%;
+    //     padding: 0;
+    // }
+
+
+
+    .i-right>* {
+        position: absolute;
+        // z-index: 1;
+    }
+
+}
+
+.blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(212px);
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
+}
+
+@media (max-width: 800px) {
+
+    .intro .i-right> :nth-child(1) {
+        transform: scale(0.5);
+        left: -54%;
+        top: -3%;
+    }
+}
+@media (max-width: 550px) {
+
+    .intro{
+        flex-direction: column;
+
+        .i-right> :nth-child(5) {
+            // floating div nodejs
+            top: 112% !important;
+            left: -1% !important;
+        }
+        
+    }
+}
